@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.logo img {
+    height: 45px;
+    padding: 0 8px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 30px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#progress-bar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.song-item-container {
+    margin-top: 34px;
+}
+
+.song-item {
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.song-item img {
+    width: 45px;
+    margin: 0 13px;
+    border-radius: 50%;
+}
+
+.timestamp {
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.song-info {
+    position: absolute;
+    left: 10vw;
+}
+
+.song-info img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+@media (max-width: 500px) {
+    .icons {
+        position: relative;
+        left: 75px;
+    }
+
+    .timestamp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 10px;
+        padding-left: -20px; */
+    }
+}
